@@ -1,0 +1,43 @@
+body {
+
+}
+
+
+tr.context:nth-child(2n+1) {
+    background-color: #F2F2F2;
+}
+
+tr.context:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+tr.blank {
+    background-color: white;
+}
+
+tr td:first-child {
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+th {
+    border: 1px solid black;
+
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+}
+
+table.contexts th {
+    border: 1px solid black;
+
+    text-align: left;
+    background-color: darkgreen;
+    color: white;
+}
