@@ -14,8 +14,14 @@ Talon Voice Commands Cheatsheet
 actions.user.cheatsheet()
 ```
 
-Then open the cheatsheet.html file in your browser.  You can then print it to have a hard copy, or save it as a PDF.
-The HTML includes page breaks, so it should come out fairly nicely.
+Then open the cheatsheet.html file  which is generating in the lib directory of this project in your browser ( google chrome works, firefox doesn't).
+You can then print it to have a hard copy, or save it as a PDF.
+
+The HTML includes page breaks,  as well as breaks within the tables describing the commands of each context, so it should come out fairly nicely.
+
+The within table logic breaks every five lines,  unless each command is starting roughly the same in which case it defers the page break until a suitable is endpoint
+
+An example of how this looks  in pdf format in the example output folder.
 
 The page break logic doesn't quite work if you try and edit it in word or or libre office, 
 Everything's works fine with  google chrome,  firefox gives me some kind of security error,  I've not tested elsewhere.
