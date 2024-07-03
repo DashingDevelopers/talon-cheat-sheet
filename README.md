@@ -17,11 +17,26 @@ actions.user.cheatsheet()
 Then open the cheatsheet.html file in your browser.  You can also print it to have a hard copy.
 The HTML includes page breaks, so it should come out fairly nicely.
 
+
+I apologize for the ugly code, I just wanted to make it work so I can print the commands out so I could have them on my wall
+
+The algorithms for  counting the number of lines to calculate page breaks page breaks are assuming A4,
+and were derived from multiple ones until it seemed to work for me with the contexts that I have!
+
+In order not to waste paper,  I simply deleted all of the folders from the talent community apps folder  that had applications I knew I would never use.
+
+Also for readability,  I  skipped identifying which OS the commands were for on the basis that  I'd be able to work it out anyway.
+ do use mac windows and Linux for my operations but I rarely touch anything other than Linux so I can't say for sure that  this logic is sound.
+
+
+
+
+
 Suggested Future features:
 
-Add a way to print a  cheat sheet from a single user context to cater for new user Repositories and applications.
-It might just be easier to generate individual HTML files per thing. So that No configuration is required.
-Alternatively you can just the file in the word processor,  and edit out the bits you don't need updating.
+Add a way to print a  cheat sheet from a single user context to cater for new user repositories and applications.
+It might just be easier to generate individual HTML files per context so that no configuration is required  by users who don't know how to use PHP.
+Alternatively you can  just let the page you want in the browser when you're printing there's only one thing  that has changed
 
 Feel free to contribute to this repo.  I will be happy to accept pull requests.
 
