@@ -27,7 +27,8 @@ The HTML includes page breaks,  as well as breaks within the tables describing t
 
 The within table logic breaks every five lines,  unless each command is starting roughly the same in which case it defers the page break until a suitable endpoint
 
-An example of how this looks  in pdf format is in the example output folder.
+An [example of how this looks in pdf format](https://github.com/DashingDevelopers/talon-cheat-sheet/blob/main/example_output/cheatsheet_printed_from_browser.pdf) is in the example output folder.
+
 
 The page break logic doesn't quite work if you try and edit it in word or or libre office, 
 Everything's works fine with  google chrome,  firefox gives me some kind of security error,  I've not tested elsewhere.
