@@ -17,6 +17,12 @@ actions.user.cheatsheet()
 Then open the cheatsheet.html file  which is generating in the lib directory of this project in your browser ( google chrome works, firefox doesn't).
 You can then print it to have a hard copy, or save it as a PDF.
 
+
+![Screenshot from 2024-09-13 11-48-57](https://github.com/user-attachments/assets/84956c2a-7b39-446f-8983-c82579b33cf2)
+
+
+
+
 The HTML includes page breaks,  as well as breaks within the tables describing the commands of each context, so it should come out fairly nicely.
 
 The within table logic breaks every five lines,  unless each command is starting roughly the same in which case it defers the page break until a suitable endpoint
