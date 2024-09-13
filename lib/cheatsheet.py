@@ -308,11 +308,13 @@ class user_actions:
         write_html_header(file)
         file.write(f"<h1 align=center>Talon Cheat Sheet</h1>\n\n")
         file.write(f"<p align=center>Generated on: {datetime.now()}</p>\n\n")
-        # write_arrow(file)
-        # write_function(file)
-        # write_modifiers(file)
-        # write_numbers(file)
-        # write_special(file)
+
+
+        write_arrow(file)
+        write_function(file)
+        write_modifiers(file)
+        write_numbers(file)
+        write_special(file)
 
         write_alphabet(file)
         write_formatters(file)

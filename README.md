@@ -1,7 +1,7 @@
 # talon-cheat-sheet
 printable well formatted cheat sheet for all available contexts
 
-copied and modded from https://gist.github.com/tararoys/c538b7ae8e1f21db9a794c2c0f5becf4
+copied and modded from https://gist.github.com/A/c538b7ae8e1f21db9a794c2c0f5becf4
 
 Talon Voice Commands Cheatsheet
 
