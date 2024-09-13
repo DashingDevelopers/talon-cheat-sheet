@@ -17,15 +17,29 @@ lines_written = 0
 
 
 # repeat the above but in html format
-def user_list_to_html_table(file, list_name,sort_by='key'):
+def user_list_to_html_table(file, list_name,sort_by='key',left_pad_value=0):
 
     global lines_written
 
 
-    command_list = registry.lists[list_name][0].items()
+    command_list_from_registry = registry.lists[list_name][0].items()
+
+    if left_pad_value>0:
+        #left pad the value with spaces
+
+        command_list_from_registry = [(key, value.rjust(left_pad_value)) for key, value in command_list_from_registry]
+
 
     #sort the commands by the key
-    command_list = sort_command_list(command_list,sort_by)
+    if sort_by=='key' or sort_by=='value':
+        command_list = sort_command_list(command_list_from_registry,sort_by)
+    else:
+        #build the command list using the ordered indexes
+        command_list = []
+        for key in sort_by.split(','):
+            for item_key, item_value in command_list_from_registry:
+                if item_key == key:
+                    command_list.append((item_key, item_value))
 
 
 
@@ -310,16 +324,20 @@ class user_actions:
         file.write(f"<p align=center>Generated on: {datetime.now()}</p>\n\n")
 
 
-        write_arrow(file)
-        write_function(file)
-        write_modifiers(file)
-        write_numbers(file)
-        write_special(file)
+
 
         write_alphabet(file)
         write_formatters(file)
         write_punctuation(file)
         write_symbol(file)
+
+        write_special(file)
+        write_modifiers(file)
+
+        write_arrow(file)
+        write_function(file)
+        write_numbers(file)
+
 
 
         file.write('<p style="page-break-after: always;"/>')
@@ -347,7 +365,7 @@ def write_alphabet(file):
 
 
 def write_numbers(file):
-    user_list_to_html_table(file, 'user.number_key')
+    user_list_to_html_table(file, 'user.number_key', sort_by='value')
 
 
 def write_modifiers(file):
@@ -363,7 +381,7 @@ def write_symbol(file):
 
 
 def write_arrow(file):
-    user_list_to_html_table(file, 'user.arrow_key')
+    user_list_to_html_table(file, 'user.arrow_key', sort_by='up,down,left,right')
 
 
 def write_punctuation(file):
@@ -371,7 +389,7 @@ def write_punctuation(file):
 
 
 def write_function(file):
-    user_list_to_html_table(file, 'user.function_key')
+    user_list_to_html_table(file, 'user.function_key', sort_by='value',left_pad_value=3)
 
 
 def write_formatters(file):
