@@ -76,10 +76,10 @@ def user_list_to_html_table_formatters_nonprogramatically(file, list_name,sort_b
     #from core.text import formatters  #depends  on source code from https://github.com/talonhub/community
 
 
-    command_list = registry.lists[list_name][0].items()
+    #command_list = registry.lists[list_name][0].items()
 
     #sort the commands by the key
-    command_list = sort_command_list(command_list,sort_by)
+    #command_list = sort_command_list(command_list,sort_by)
 
 
     # override the command list with a non programmatically generated list as I can't get this working with formatters.Actions.formatted_text(value+" Example", value)
